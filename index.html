@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomFigs - Кастомные 3D-фигурки сотрудников</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Three.js для 3D модели -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- HERO BLOCK -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Кастомные 3D-фигурки ваших сотрудников</h1>
+            <p class="hero-subtitle">Создавайте уникальные сувениры, которые станут идеальным подарком и символом вашей команды</p>
+            
+            <div class="cta-buttons">
+                <button class="btn btn-primary">Заказать сейчас</button>
+                <button class="btn btn-secondary">Посмотреть портфолио</button>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="placeholder-hero">
+                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <rect width="200" height="200" fill="url(#grad1)" rx="20"/>
+                    <circle cx="100" cy="70" r="30" fill="white" opacity="0.9"/>
+                    <ellipse cx="100" cy="130" rx="35" ry="40" fill="white" opacity="0.9"/>
+                    <circle cx="75" cy="105" r="8" fill="white" opacity="0.7"/>
+                    <circle cx="125" cy="105" r="8" fill="white" opacity="0.7"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Довольных клиентов</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Созданных фигурок</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">4.9★</span>
+                <span class="stat-label">Рейтинг на Яндекс</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOR WHOM BLOCK -->
+    <section class="for-whom">
+        <div class="container">
+            <h2 class="section-title">Для кого это?</h2>
+            <p class="section-subtitle">Идеально подходит для компаний, которые ценят креативность и оригинальность</p>
+
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">🏢</div>
+                    <h3>Крупные корпорации</h3>
+                    <p>Подарок для лучших сотрудников и партнёров на праздники и достижения</p>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">🚀</div>
+                    <h3>Стартапы</h3>
+                    <p>Мерч для команды, который укрепляет дух коллектива и корпоративную культуру</p>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">🎓</div>
+                    <h3>IT компании</h3>
+                    <p>Оригинальные награды за проекты и достижения для сотрудников</p>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">🏪</div>
+                    <h3>Агентства</h3>
+                    <p>Уникальные бонусы для клиентов и сотрудников как признание важности</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS BLOCK -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как это работает?</h2>
+            <p class="section-subtitle">Простой процесс от идеи до готовой фигурки</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">📸</div>
+                    <h3>Отправьте фото</h3>
+                    <p>Загрузите качественные фото сотрудника с разных ракурсов. Мы создадим 3D-модель на основе изображений</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">🎨</div>
+                    <h3>Дизайн и утверждение</h3>
+                    <p>Наша команда создаст цифровой прототип. Вы сможете внести изменения и утвердить дизайн</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">🖨️</div>
+                    <h3>Печать и доставка</h3>
+                    <p>Печатаем на 3D-принтере, раскрашиваем вручную и отправляем прямо к вам</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS BLOCK -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас?</h2>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Быстрая доставка</h3>
+                    <p>От идеи до готового изделия всего 2-3 недели</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Идеальное сходство</h3>
+                    <p>Современные технологии 3D-сканирования для максимальной реалистичности</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Качество гарантировано</h3>
+                    <p>Используем премиальные материалы и краски для долговечности</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Доступные цены</h3>
+                    <p>Объёмные скидки при заказе для всей команды</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Личный менеджер</h3>
+                    <p>Вас будет сопровождать один человек на всех этапах</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Уникальный дизайн</h3>
+                    <p>Сотни вариантов пошива, причёсок и аксессуаров</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY BLOCK -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Примеры наших работ</h2>
+            <p class="section-subtitle">Вдохновитесь идеями из наших предыдущих проектов</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="img1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="300" fill="url(#img1)"/>
+                            <circle cx="150" cy="100" r="40" fill="white" opacity="0.8"/>
+                            <ellipse cx="150" cy="180" rx="50" ry="60" fill="white" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <p class="gallery-caption">Софья Крупская, HR-специалист</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="img2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="300" fill="url(#img2)"/>
+                            <circle cx="150" cy="100" r="40" fill="white" opacity="0.8"/>
+                            <ellipse cx="150" cy="180" rx="50" ry="60" fill="white" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <p class="gallery-caption">Иван Петров, Lead Developer</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="img3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#fa709a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#fee140;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="300" fill="url(#img3)"/>
+                            <circle cx="150" cy="100" r="40" fill="white" opacity="0.8"/>
+                            <ellipse cx="150" cy="180" rx="50" ry="60" fill="white" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <p class="gallery-caption">Мария Волкова, Дизайнер</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="img4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#30cfd0;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#330867;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="300" fill="url(#img4)"/>
+                            <circle cx="150" cy="100" r="40" fill="white" opacity="0.8"/>
+                            <ellipse cx="150" cy="180" rx="50" ry="60" fill="white" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <p class="gallery-caption">Алексей Смирнов, CEO</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="img5" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#a8edea;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#fed6e3;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="300" fill="url(#img5)"/>
+                            <circle cx="150" cy="100" r="40" fill="white" opacity="0.8"/>
+                            <ellipse cx="150" cy="180" rx="50" ry="60" fill="white" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <p class="gallery-caption">Ольга Лебедева, PR-менеджер</p>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-image">
+                        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="img6" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff9a56;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff6a88;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect width="300" height="300" fill="url(#img6)"/>
+                            <circle cx="150" cy="100" r="40" fill="white" opacity="0.8"/>
+                            <ellipse cx="150" cy="180" rx="50" ry="60" fill="white" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <p class="gallery-caption">Виктор Соколов, Product Manager</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI PREVIEW GENERATOR BLOCK -->
+    <section class="preview-generator">
+        <div class="container">
+            <h2 class="section-title">Смотрите свой результат</h2>
+            <p class="section-subtitle">Загрузите фото сотрудника и выберите параметры — ИИ создаст реалистичный превью вашей фигурки</p>
+
+            <div class="preview-wrapper">
+                <!-- LEFT: Configuration Form -->
+                <div class="config-form-container">
+                    <h3>Параметры вашей фигурки</h3>
+                    
+                    <form id="previewForm" class="preview-form">
+                        <!-- Photo Upload -->
+                        <div class="form-group">
+                            <label for="photoUpload">1️⃣ Загрузите фото сотрудника</label>
+                            <input 
+                                type="file" 
+                                id="photoUpload" 
+                                accept="image/*" 
+                                class="file-input"
+                                required
+                            >
+                            <p class="form-hint">JPG, PNG (рекомендуемый размер: 800x800px)</p>
+                        </div>
+
+                        <!-- Gender Selection -->
+                        <div class="form-group">
+                            <label for="gender">2️⃣ Пол</label>
+                            <select id="gender" required>
+                                <option value="">Выберите пол</option>
+                                <option value="male">Мужчина</option>
+                                <option value="female">Женщина</option>
+                                <option value="neutral">Не указывать</option>
+                            </select>
+                        </div>
+
+                        <!-- Clothing Style -->
+                        <div class="form-group">
+                            <label for="clothing">3️⃣ Стиль одежды</label>
+                            <select id="clothing" required>
+                                <option value="">Выберите стиль</option>
+                                <option value="casual">Casual (повседневная)</option>
+                                <option value="formal">Formal (деловой костюм)</option>
+                                <option value="tech">Tech (hoodie + кроссовки)</option>
+                                <option value="custom">Индивидуальный стиль</option>
+                            </select>
+                        </div>
+
+                        <!-- Pose -->
+                        <div class="form-group">
+                            <label for="pose">4️⃣ Поза</label>
+                            <select id="pose" required>
+                                <option value="">Выберите позу</option>
+                                <option value="standing">Стоя, спокойно</option>
+                                <option value="sitting">Сидя</option>
+                                <option value="working">За работой</option>
+                                <option value="dynamic">Динамичная поза</option>
+                            </select>
+                        </div>
+
+                        <!-- Accessories -->
+                        <div class="form-group">
+                            <label>5️⃣ Аксессуары</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="accessories" value="glasses">
+                                    Очки 👓
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="accessories" value="beard">
+                                    Борода 🧔
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="accessories" value="cap">
+                                    Кепка 🧢
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="accessories" value="laptop">
+                                    Ноутбук 💻
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="accessories" value="coffee">
+                                    Кружка кофе ☕
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Color -->
+                        <div class="form-group">
+                            <label for="color">6️⃣ Цветовая схема</label>
+                            <select id="color" required>
+                                <option value="">Выберите цвет</option>
+                                <option value="vibrant">Яркая и весёлая</option>
+                                <option value="professional">Профессиональная</option>
+                                <option value="pastel">Пастельная</option>
+                                <option value="dark">Тёмная и стильная</option>
+                            </select>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="button" class="btn btn-primary" id="generateBtn">
+                            ✨ Генерировать превью
+                        </button>
+                        <p class="form-notice preview-message" id="previewMessage"></p>
+                    </form>
+                </div>
+
+                <!-- RIGHT: Preview Area -->
+                <div class="preview-result-container">
+                    <h3>Ваш результат</h3>
+                    
+                    <div class="preview-box" id="previewBox">
+                        <div class="preview-placeholder">
+                            <p>📸 Загрузите фото и выберите параметры</p>
+                            <p class="preview-hint">После этого нажмите "Генерировать превью"</p>
+                        </div>
+                    </div>
+
+                    <!-- 3D Canvas для Three.js -->
+                    <canvas id="canvas3d" style="display: none; width: 100%; height: 400px;"></canvas>
+
+                    <!-- Контролы для 3D модели -->
+                    <div class="controls-3d" id="controls3d" style="display: none;">
+                        <p class="hint-3d">💡 Вращайте мышкой • Скролл для масштабирования</p>
+                        <label class="toggle-2d-3d">
+                            <input type="checkbox" id="toggle3d">
+                            Переключить на 2D
+                        </label>
+                    </div>
+
+                    <!-- Preview Info -->
+                    <div class="preview-info" id="previewInfo" style="display: none;">
+                        <p class="preview-desc">
+                            На основе вашего фото и выбранных параметров будет создана индивидуальная 3D-фигурка. 
+                            Она будет отпечатана на принтере и раскрашена вручную нашими мастерами.
+                        </p>
+                        <button class="btn btn-primary" id="confirmBtn">
+                            ✓ Подтвердить заказ
+                        </button>
+                        <button class="btn btn-secondary" id="editBtn">
+                            ✎ Изменить параметры
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Block -->
+            <div class="preview-info-block">
+                <h4>📊 Как это работает?</h4>
+                <div class="info-steps">
+                    <div class="info-step">
+                        <span class="step-num">1</span>
+                        <p><strong>Загружаете фото</strong> сотрудника и выбираете параметры</p>
+                    </div>
+                    <div class="info-step">
+                        <span class="step-num">2</span>
+                        <p><strong>ИИ обрабатывает данные</strong> и создаёт реалистичный рендер</p>
+                    </div>
+                    <div class="info-step">
+                        <span class="step-num">3</span>
+                        <p><strong>Видите результат</strong> прямо на экране</p>
+                    </div>
+                    <div class="info-step">
+                        <span class="step-num">4</span>
+                        <p><strong>Подтверждаете заказ</strong> — мы начинаем производство</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM BLOCK -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-form-container">
+                    <h2 class="section-title">Оставить заказ</h2>
+                    <p class="section-subtitle">Заполните форму и наш менеджер свяжется с вами в течение часа</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Ваш email" required>
+                        <input type="tel" placeholder="Номер телефона" required>
+                        <input type="text" placeholder="Название компании" required>
+                        <select required>
+                            <option value="">Выберите тип фигурки</option>
+                            <option value="small">Маленькая (10 см)</option>
+                            <option value="medium">Средняя (15 см)</option>
+                            <option value="large">Большая (20 см)</option>
+                            <option value="custom">Индивидуальный размер</option>
+                        </select>
+                        <textarea placeholder="Дополнительная информация" rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary">Оставить заказ</button>
+                    </form>
+                    <p class="form-notice" id="formMessage"></p>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <p class="info-label">Телефон</p>
+                            <p class="info-value">+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <p class="info-label">Email</p>
+                            <p class="info-value">hello@customfigs.ru</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <p class="info-label">Адрес</p>
+                            <p class="info-value">Москва, ул. Инновационная, 42</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">⏰</div>
+                        <div>
+                            <p class="info-label">Режим работы</p>
+                            <p class="info-value">Пн-Пт: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="socials">
+                        <a href="#" class="social-link">Telegram</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                        <a href="#" class="social-link">VK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CustomFigs</h4>
+                    <p>Кастомные 3D-фигурки для вашей команды</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#hero">Главная</a></li>
+                        <li><a href="#for-whom">Для кого</a></li>
+                        <li><a href="#how">Как это работает</a></li>
+                        <li><a href="#benefits">Преимущества</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (999) 123-45-67</p>
+                    <p>✉️ hello@customfigs.ru</p>
+                    <p>📍 Москва</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 CustomFigs. Все права защищены.</p>
+                <p>Сделано с ❤️ для вашей команды</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="three-setup.js"></script>
+</body>
+</html>
