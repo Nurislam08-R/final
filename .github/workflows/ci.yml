@@ -1,0 +1,25 @@
+name: CI - Basic checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify required files exist
+        run: |
+          test -f index.html || (echo "index.html missing" && exit 1)
+          test -f style.css || (echo "style.css missing" && exit 1)
+          test -f script.js || (echo "script.js missing" && exit 1)
+          test -f three-setup.js || (echo "three-setup.js missing" && exit 1)
+
+      - name: Print summary
+        run: |
+          echo "All required files present. Quick smoke-check passed."
